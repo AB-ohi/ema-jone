@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "question": "Props vs state",
+      "answer": "Props are read-only and provide unidirectional data flow from parent to child components. In contrast, state is used for managing changeable data within a component and can be updated internally through setState()."
+    },
+    {
+      "id": 2,
+      "question": "How does useState work?",
+      "answer": "useState is a React hook used for managing stateful data. It takes an initial value and returns a function to update it. It's useful for handling dynamic data that changes frequently in a component."
+    },
+    {
+      "id": 3,
+      "question": "Purpose of useEffect other than fetching data.",
+      "answer": "useEffect is a React hook used for performing side effects in response to changes in a component's props or state. By specifying dependencies, such as 'x', it's possible to trigger updates for validating input or updating components without reloading data."
+    },
+    {
+      "id": 4,
+      "question": "How does React work?",
+      "answer": "React is a JavaScript library that creates a virtual DOM for efficiently rendering UI components. It updates the virtual DOM when state or props change, compares it with the old one, calculates differences, and performs only necessary updates on the actual DOM - a process called reconciliation."
+    }
+  ]  
