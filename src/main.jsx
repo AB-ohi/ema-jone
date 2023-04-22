@@ -12,6 +12,7 @@ import Orders from './components/Order/Orders';
 import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
 import cartProductsLoader from './components/CartProductsLoader/CartProductsLoader';
+import SingUp from './components/SingUp/SingIn';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
         path:'login',
         element:<Login></Login>
       },
+      {
+        path:'singUp',
+        element:<SingUp></SingUp>
+      }
     ]
   }
 ])

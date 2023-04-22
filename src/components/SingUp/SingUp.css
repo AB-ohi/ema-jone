@@ -1,0 +1,24 @@
+.from-title{
+    text-align: center;
+}
+.from-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.from-container{
+    margin: 40px auto;
+    border: 1px solid #95A0A7;
+    width: 500px;
+}
+
+.from-control input{
+    width: 415px;
+}
+
+.input-filed{
+    display: flex;
+    flex-direction: column;
+}
