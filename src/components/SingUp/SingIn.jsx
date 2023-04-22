@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const SingUp = () => {
     return (
         <div className='from-container'>
-            <h2 className='from-title'>Please singUP</h2>
+            <h2 className='from-title'>Sing UP</h2>
             <form>
                 <div className='from-control'>
                     <div className='input-filed'>
@@ -23,6 +23,12 @@ const SingUp = () => {
                     </div>
                     <button>Sing Up</button>
                     <p>Already have an account? <Link to='/login'>Login</Link> </p>
+                    <div className='other-sing-in-border'>
+                        <div/>
+                        <p>or</p>
+                        <div/>
+                    </div>
+                    <button style={{background:'none',border: '1px solid #95A0A7'}}><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" width="20"/>Continue with Google</button>
                 </div>
             </form>
         </div>
