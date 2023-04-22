@@ -11,11 +11,16 @@
 .from-container{
     margin: 40px auto;
     border: 1px solid #95A0A7;
+    border-radius: 8px;
     width: 500px;
 }
 
 .from-control input{
     width: 415px;
+    height: 44px;
+    background: none;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
 }
 
 .input-filed{
