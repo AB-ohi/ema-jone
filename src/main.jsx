@@ -12,8 +12,9 @@ import Orders from './components/Order/Orders';
 import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
 import cartProductsLoader from './components/CartProductsLoader/CartProductsLoader';
-import SingUp from './components/SingUp/SingIn';
+
 import AuthProviders from './components/Providers/AuthProviders';
+import SingUp from './components/SingUp/SingUp';
 
 const router = createBrowserRouter([
   {
