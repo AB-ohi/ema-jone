@@ -23,6 +23,10 @@
     background: rgba(255, 153, 0, 0.3);
     color: black;
     border: none;
+    transition: 0.4s;
+}
+.from-control button:hover{
+    background: rgba(184, 110, 0, 0.734);
 }
 
 .from-container {
@@ -30,7 +34,8 @@
     border: 1px solid #95A0A7;
     border-radius: 8px;
     width: 500px;
-    height: 700px;
+    height: auto;
+    box-shadow: -11px -9px 0px #FFE0B3
 }
 
 .from-control input {
@@ -67,4 +72,10 @@
     width: 145px;
     border: 1px solid #95A0A7;
     height: 0px;
+}
+
+.text-error{
+    color: red;
+    font-size: 15px;
+    margin: 0;
 }
