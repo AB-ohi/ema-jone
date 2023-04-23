@@ -16,7 +16,7 @@ const SingUp = () => {
 
         console.log(email, password, confirm)
 
-
+        setError('')
         if (password !== confirm){
             setError('Your password did not match');
             return;
