@@ -18,3 +18,19 @@
 .nav-items a:hover{
     color: orange;
 }
+
+.logOut-btn{
+    color: white;
+    background-color: #FF9900;
+    outline: none;
+    border: 2px solid rgba(255, 166, 0, 0);
+    margin-left: 10px;
+    transition: 0.4s;
+
+}
+
+.logOut-btn:hover{
+    color: orange;
+    background-color: #0622347e;
+    border: 2px solid orange;
+}

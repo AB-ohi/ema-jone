@@ -6,7 +6,7 @@ import { AuthContext } from '../Providers/AuthProviders';
 
 const SingUp = () => {
     const [error, setError] = useState('');
-    const {createUser} = useContext(AuthContext)
+    const {createUser} = useContext(AuthContext);
 
     const handleSingUp = event =>{
         event.preventDefault();
