@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Shop from './components/shop/Shop';
+import Shop from './components/shop/Shop'; 
 import Home from './components/Home/Home';
 import Orders from './components/Order/Orders';
 import Inventory from './components/Inventory/Inventory';
@@ -33,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: 'inventory',
         element: <Inventory></Inventory>
+      },
+      {
+        path: 'checkOut',
+        element:
       },
       {
         path: '/login',

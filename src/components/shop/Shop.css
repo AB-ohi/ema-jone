@@ -8,3 +8,8 @@
     justify-items: center;
     gap: 10px;
 }
+
+.btn-proceed{
+    background-color: pink;
+    color: darkslategrey;
+}

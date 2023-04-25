@@ -36,7 +36,11 @@ const Orders = () => {
             <Cart
              cart={ cart }
              clearAddToCart = {clearAddToCart}
-             ></Cart>
+             >
+                <Link to='/orders'>
+                        <button className='btn-proceed'>Proceed Checkout</button>
+                    </Link>
+             </Cart>
         </div>
         </div>
     );
