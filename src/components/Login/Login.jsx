@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import { useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProviders';
 
 const Login = () => {
+    const [show, setShow] = useState(false)
 
     const [error,setError] = useState('');
     const {signIn} = useContext(AuthContext)
     const Navigate = useNavigate()
+    const location = useLocation()
+    console.log(location)
+
+    const from = location.state?.from?.pathname ||'/';
 
     const handelToSignIn = event => {
         event.preventDefault();
@@ -30,7 +35,7 @@ const Login = () => {
             const loggedUser = result.user
             console.log(result.user)
             form.reset();
-            Navigate('/')
+            Navigate(from)
         })
         .catch(error =>{
             setError(error.massage)
@@ -48,7 +53,12 @@ const Login = () => {
                     </div>
                     <div className='input-filed'>
                         <label>Password</label>
-                        <input type="password" name="password" id="" required />
+                        <input type={show? "text":"password"} name="password" id="" required />
+                        <p onClick={() => setShow(!show)}><small>
+                            {
+                                show? <span>Hide password</span>:<span>show password</span>
+                            }
+                            </small></p>
                     </div>
                     <button>Sing Up</button>
                     <p className='text-error'>{error}</p>
