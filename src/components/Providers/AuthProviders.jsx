@@ -7,7 +7,7 @@ const auth = getAuth(app)
 const AuthProviders = ({children}) => {
 
     const [user, setUser] = useState(null);
-    console.log (user)
+    const [loading, useLoading] = useState(true);
 
 
     const createUser = (email,password) =>{
@@ -31,6 +31,7 @@ const AuthProviders = ({children}) => {
     
     const authInfo = {
         user,
+        loading,
         createUser,
         signIn,
         logOut,

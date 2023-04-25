@@ -26,7 +26,7 @@ const Header = () => {
             <Link to="/login">Login</Link>
             <Link to="/singUP">SingUp</Link>
             {
-                user && <span style={{color:'white'}}>Welcome{user.email
+                user && <span style={{color:'white', marginLeft:'10px'}}>{user.email
                 } 
                 <button onClick={HandelLogOut} className='logOut-btn'>Log Out</button>
                 </span>
